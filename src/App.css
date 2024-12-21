@@ -1,111 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* App.css */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
   color: #333;
 }
 
-.App {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+.main-content {
+  flex: 1;
+  padding: 1rem;
 }
 
-.resume-header {
+.horizontal-section,
+.vertical-section {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: #f1f1f1;
   text-align: center;
-  padding: 20px 0;
-  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
 }
 
-.resume-header h1 {
-  font-size: 2.5rem;
-  margin: 0;
-  color: #1e88e5;
+/* HorizontalScroller.css */
+.horizontal-scroller {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem 0;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-.resume-content {
-  margin-top: 20px;
-}
-
-.section {
-  margin-bottom: 20px;
-}
-
-.section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #1e88e5;
-}
-
-.section p,
-.section ul {
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-.section ul {
-  list-style: square;
-  padding-left: 20px;
-}
-
-.resume-footer {
+.category-card {
+  min-width: 150px;
+  margin-right: 1rem;
+  background-color: #eee;
+  padding: 1rem;
   text-align: center;
-  margin-top: 30px;
-  padding: 10px;
-  border-top: 2px solid #ddd;
-  font-size: 0.9rem;
-  color: #777;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-a {
-  color: #1e88e5;
-  text-decoration: none;
+/* VerticalScroller.css */
+.vertical-scroller {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 300px;
+  gap: 1rem;
 }
 
-a:hover {
-  text-decoration: underline;
+.product-card {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
